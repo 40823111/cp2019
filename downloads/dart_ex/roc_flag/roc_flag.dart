@@ -19,11 +19,41 @@ void main() {
 }
 
 void drawUSA(ctx){
-  // 請畫出美國國旗
-  ctx.clearRect(0, 0, flag_w, flag_h);
-  ctx.font = "30px Arial";
-  ctx.strokeStyle = 'rgb(255, 0, 0)';
-  ctx.strokeText("請畫出美國國旗", flag_w/6, flag_w/4);
+
+   ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 15.4, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 46.2, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 77.2, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 108.0, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 138.8, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 169.6, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 200.4, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fillRect(0, 0, flag_w / 2, flag_h / 1.9);
+    num b = flag_h/18;
+  ctx.font = "10px Arial";
+  ctx.strokeStyle = 'rgb(255, 255, 255)';
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36,12);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*2);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*3);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*4);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*5);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*6);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*7);
+   ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*8);
+   ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*9);
+
+
+
 }
 
 void drawROC(ctx){
